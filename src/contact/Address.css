@@ -1,0 +1,75 @@
+/* ====== CONTAINER ====== */
+.address-container {
+  max-width: 700px;
+  background: #f2e9e4; /* Soft background */
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(34, 34, 59, 0.1);
+  border: 2px solid #c9ada7;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ====== TITLE ====== */
+.address-title {
+  color: #22223b;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ====== ADDRESS ITEMS ====== */
+.address-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #4a4e69;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* ====== ICON STYLE ====== */
+.icon {
+  color: #9a8c98;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* ====== CONTACT LINKS ====== */
+.contact-link {
+  color: #22223b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #c9ada7;
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 480px) {
+  .address-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .address-title {
+    font-size: 22px;
+  }
+
+  .address-item {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}

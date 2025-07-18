@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #22223B;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo {
+  order: 1;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F2E9E4;
+  transition: all 0.3s ease;
+  font-family: 'Kreon', serif;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #C9ADA7;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Social + Button */
+.social-iconsN {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 22px;
+  order: 3;
+}
+
+.social-iconsN a {
+  color: #F2E9E4;
+  transition: color 0.3s ease;
+}
+
+/* Hover Colors */
+.social-iconsN a[title="Call"]:hover {
+  color: #25D366;
+}
+
+.social-iconsN a[title="Email"]:hover {
+  color: #C9ADA7;
+}
+
+.social-iconsN a[title="Instagram"]:hover {
+  color: #E1306C;
+}
+
+.social-iconsN a[title="Facebook"]:hover {
+  color: #1877F2;
+}
+
+.social-iconsN a[title="YouTube"]:hover {
+  color: #FF0000;
+}
+
+/* Phone ring animation */
+.phone-icon:hover svg {
+  animation: ringPhone 0.5s ease-in-out infinite;
+}
+
+@keyframes ringPhone {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Button */
+.contact-btn button {
+  background: linear-gradient(90deg, #9A8C98, #C9ADA7);
+  color: #22223B;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn button:hover {
+  background: linear-gradient(90deg, #4A4E69, #9A8C98);
+  color: #F2E9E4;
+}
+
+.bookAppointment {
+  color: #F2E9E4;
+  text-decoration: none;
+}
+
+/* Mobile Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #F2E9E4;
+  cursor: pointer;
+  order: 2;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #C9ADA7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #4A4E69;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .social-iconsN {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+  }
+}

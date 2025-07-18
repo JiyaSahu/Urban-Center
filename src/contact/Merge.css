@@ -1,0 +1,97 @@
+/* ==== Colors ==== */
+:root {
+  --dark: #22223B;
+  --purple: #4A4E69;
+  --lavender: #9A8C98;
+  --nude: #C9ADA7;
+  --cream: #F2E9E4;
+}
+
+/* ==== Parent Container ==== */
+.merge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--cream);
+  padding: 40px 20px;
+  color: var(--dark);
+}
+
+/* ==== Section Title ==== */
+.merge-title {
+  font-size: 2.2rem;
+  color: var(--purple);
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.merge-subtitle {
+  font-size: 1.1rem;
+  color: var(--lavender);
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ==== Contact Box ==== */
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(34, 34, 59, 0.1);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* ==== Left (Address) ==== */
+.left {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: var(--cream);
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* ==== Right (Contact Form) ==== */
+.right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: var(--cream);
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+/* ==== Map Section ==== */
+.map-box {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .merge-title {
+    font-size: 1.8rem;
+  }
+
+  .merge-subtitle {
+    font-size: 1rem;
+  }
+}

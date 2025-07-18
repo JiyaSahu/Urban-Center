@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enquiry-bg {
+  background-color: #22223B;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Floating icons */
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-icon {
+  position: absolute;
+  bottom: -40px;
+  opacity: 0.06;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+  }
+}
+
+/* Form Card */
+.enquiry-card {
+  position: relative;
+  background: #F2E9E4;
+  padding: 30px 25px;
+  border-radius: 14px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  text-align: center;
+  border: 2px solid #C9ADA7;
+}
+
+.form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #22223B;
+}
+
+.form-subtitle {
+  font-size: 15px;
+  color: #4A4E69;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #C9ADA7;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  font-family: 'Kreon', serif;
+  resize: none;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(154, 140, 152, 0.4);
+}
+
+.enquiry-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #9A8C98, #C9ADA7);
+  color: #22223B;
+  box-shadow: 0 6px 12px rgba(74, 78, 105, 0.4);
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.enquiry-form button:hover {
+  background: linear-gradient(90deg, #C9ADA7, #9A8C98);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-title {
+    font-size: 22px;
+  }
+
+  .form-subtitle {
+    font-size: 13px;
+  }
+
+  .enquiry-card {
+    padding: 20px 15px;
+  }
+}

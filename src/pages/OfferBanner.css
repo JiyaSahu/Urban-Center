@@ -1,0 +1,54 @@
+.offer-banner {
+  width: 100%;
+  background: #22223B; /* Deep theme background */
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #F2E9E4; /* Lightest shade for contrast */
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+  cursor: default;
+  padding-left: 100%;
+}
+
+.offer-banner:hover .scroll-text {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive text sizes */
+@media (max-width: 1024px) {
+  .scroll-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-text {
+    font-size: 1.3rem;
+  }
+}
