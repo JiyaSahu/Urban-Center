@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'react-typewriter-effect';
 import './Home.css';
-import img1 from '../assets/h1.JPG';
-import img2 from '../assets/h2.JPG';
-import img3 from '../assets/h3.JPG';
-import img4 from '../assets/h4.JPG';
-import img5 from '../assets/h5.JPG';
+import img1 from '../assets/h1.jpg';
+import img2 from '../assets/h2.jpg';
+import img3 from '../assets/h3.jpg';
+import img4 from '../assets/h4.jpg';
+import img5 from '../assets/h5.jpg';
 
 const slides = [
   {
