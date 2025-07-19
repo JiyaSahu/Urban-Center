@@ -17,13 +17,6 @@ const Footer = () => {
         <img src={logo} alt="Urban Center Logo" />
       </div>
 
-      {/* <nav className="footer-nav">
-        <a href="/">HOME</a>
-        <a href="/about">ABOUT US</a>
-        <a href="/enquiry">CONTACT US</a>
-        <a href="/sitemap">SITEMAP</a>
-      </nav> */}
-
       <div className="social-iconsF">
         <a href="tel:+8092198267" className="call" title="Call Us">
           <FaPhoneAlt />

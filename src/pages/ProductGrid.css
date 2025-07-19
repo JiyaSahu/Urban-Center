@@ -1,7 +1,7 @@
 .product-section {
   text-align: center;
   padding: 40px 20px;
-  background: #f2e9e4; /* Lightest shade */
+  background: #cdb4db; /* Light Lavender */
 }
 
 .product-section h2 {
@@ -13,7 +13,7 @@
 
 .product-section .tagline {
   font-size: 16px;
-  color: #4a4e69;
+  color: #6a547e;
   margin-bottom: 30px;
   max-width: 800px;
   margin-left: auto;
@@ -21,26 +21,26 @@
 }
 
 .highlight {
-  color: #9a8c98;
+  color: #a2d2ff;
 }
 
 .highlight-alt {
-  color: #c9ada7;
+  color: #ffafcc;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 
 .product-card {
-  background: linear-gradient(to bottom, #fff, #e6dce5);
+  background: linear-gradient(to bottom, #fff, #ffc8dd);
   border-radius: 15px;
   padding: 20px 10px;
-  box-shadow: 0 5px 15px rgba(34, 34, 59, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
   overflow: hidden;
@@ -50,7 +50,7 @@
 .product-card img {
   width: 100%;
   height: auto;
-  max-height: 140px;
+  max-height: 200px;
   object-fit: contain;
   margin-bottom: 15px;
   transition: transform 0.4s ease;
@@ -59,12 +59,12 @@
 .product-card p {
   font-size: 16px;
   font-weight: 600;
-  color: #f2e9e4;
-  background: #4a4e69;
+  color: #fff;
+  background: #4b8bc1;
   padding: 10px 5px;
   border-radius: 10px;
   margin: 0;
-  transition: background 0.4s;
+  transition: background 0.4s ease;
 }
 
 .product-card:hover {
@@ -77,7 +77,7 @@
 }
 
 .product-card:hover p {
-  background: #22223b;
+  background: #a2d2ff;
 }
 
 /* Responsive Typography */

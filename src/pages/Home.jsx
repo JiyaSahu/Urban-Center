@@ -68,16 +68,16 @@ function Home() {
             key={currentSlide.title}
             text={currentSlide.title}
             typeSpeed={70}
-            cursorColor="#F2E9E4"
+            cursorColor="#FFC8DD"
           />
         </h1>
         <p className="carousel-subtitle">{currentSlide.subtitle}</p>
       </div>
 
-      <button className="nav-button left" onClick={goToPrev}>
+      <button className="nav-buttonH left" onClick={goToPrev}>
         &#9664;
       </button>
-      <button className="nav-button right" onClick={goToNext}>
+      <button className="nav-buttonH right" onClick={goToNext}>
         &#9654;
       </button>
     </div>

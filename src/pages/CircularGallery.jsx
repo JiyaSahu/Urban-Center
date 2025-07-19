@@ -1,5 +1,16 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from "ogl";
 import { useEffect, useRef } from "react";
+import urban1 from '../assets/urban1.jpeg'; 
+import u1 from '../assets/u1.jpeg'; 
+import u2 from '../assets/u2.jpeg'; 
+import u3 from '../assets/u3.jpeg'; 
+import u4 from '../assets/u4.jpeg'; 
+import u5 from '../assets/u5.jpeg'; 
+import u6 from '../assets/u6.jpeg'; 
+import u7 from '../assets/u7.jpeg'; 
+import u8 from '../assets/u8.jpeg'; 
+import u9 from '../assets/u9.jpeg'; 
+
 
 import "./CircularGallery.css";
 
@@ -327,19 +338,21 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: "Bridge" },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: "Desk Setup" },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: "Waterfall" },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: "Strawberries" },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: "Deep Diving" },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: "Train Track" },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: "Santorini" },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: "Blurry Lights" },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: "New York" },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: "Good Boy" },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: "Coastline" },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: "Palm Trees" },
-    ];
+  { image: urban1, text: "Fresh Aisles" },
+  { image: u1, text: "Fresh Aisles" },
+  { image: u2, text: "Fresh Aisles" },
+  { image: u3, text: "Fresh Aisles" },
+  { image: u4, text: "Fresh Aisles" },
+  { image: u5, text: "Fresh Aisles" },
+  { image: u6, text: "Fresh Aisles" },
+  { image: u7, text: "Fresh Aisles" },
+  { image: u8, text: "Fresh Aisles" },
+  { image: u9, text: "Fresh Aisles" },
+  
+  
+  
+];
+
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
     this.medias = this.mediasImages.map((data, index) => {

@@ -1,20 +1,18 @@
 import React from "react";
 import "./ProductGrid.css";
 
-// Static images
-import p1 from "../assets/p1.jpg";
-import p2 from "../assets/p2.jpg";
-import p3 from "../assets/p3.jpg";
-import p4 from "../assets/p4.jpg";
-import p5 from "../assets/p5.jpg";
-import p6 from "../assets/p6.jpg";
-import p7 from "../assets/p7.jpg";
-import p8 from "../assets/p8.jpg";
-import p9 from "../assets/p9.jpg";
-import p10 from "../assets/p10.jpg";
-import p11 from "../assets/p11.jpg";
-import p12 from "../assets/p12.jpg";
-import p13 from "../assets/p13.jpg";
+import p1 from "../assets/p01.png";
+import p2 from "../assets/p02.png";
+import p3 from "../assets/p03.png";
+import p4 from "../assets/p04.png";
+import p5 from "../assets/p01.png";
+import p6 from "../assets/p02.png";
+import p7 from "../assets/p03.png";
+import p8 from "../assets/p04.png";
+import p9 from "../assets/p01.png";
+import p10 from "../assets/p02.png";
+import p11 from "../assets/p03.png";
+
 
 const productItems = [
   { title: "Fresh Biscuits & Cookies", img: p1 },
@@ -28,8 +26,9 @@ const productItems = [
   { title: "Dry Fruits & Superfoods", img: p9 },
   { title: "Sauces, Pickles & Spreads", img: p10 },
   { title: "Atta, Rice & Pulses", img: p11 },
-  { title: "Premium Masalas & Spices", img: p12 },
-  { title: "Everyday Grocery Essentials", img: p13 },
+  { title: "Atta, Rice & Pulses", img: p1 },
+  
+  
 ];
 
 const ProductGrid = () => {
@@ -46,7 +45,7 @@ const ProductGrid = () => {
         {productItems.map((item, idx) => (
           <div className="product-card" key={idx}>
             <img src={item.img} alt={item.title} loading="lazy" />
-            <p>{item.title}</p>
+            {/* <p>{item.title}</p> */}
           </div>
         ))}
       </div>

@@ -44,7 +44,7 @@ export default function Navbar() {
         {/* Social Icons + Button */}
         <div className="social-iconsN">
           <a href="tel:+918092198267" title="Call" className="phone-icon"><FaPhone /></a>
-          <a href="mailto:urbancenter59@gmail.com" title="Email"><FaEnvelope /></a>
+          <a href="mailto:urbancenter32@gmail.com" title="Email"><FaEnvelope /></a>
           <a href="https://www.instagram.com/urbancenter59/?hl=en" target="_blank" rel="noreferrer" title="Instagram"><FaInstagram /></a>
           <a href="https://www.facebook.com/profile.php?id=61578091002447" target="_blank" rel="noreferrer" title="Facebook"><FaFacebookF /></a>
           <a href="#" target="_blank" rel="noreferrer" title="YouTube"><FaYoutube /></a>

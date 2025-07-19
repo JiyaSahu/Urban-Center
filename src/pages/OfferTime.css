@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: #f2e9e4; /* light text */
+  color: #fff;
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(34, 34, 59, 0.8); /* #22223B dark overlay */
+  background: rgba(205, 180, 219, 0.85); /* #CDB4DB with opacity */
   z-index: 1;
 }
 
@@ -29,16 +29,16 @@
 }
 
 .hero-title {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #f2e9e4;
+  color: #fff;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #c9ada7;
+  color: #bde0fe; /* Light blue accent */
   font-weight: 500;
 }
 
@@ -51,13 +51,18 @@
 }
 
 .time-box {
-  background: #9a8c98;
-  color: #fff;
+  background: #a2d2ff;
+  color: #222;
   padding: 1rem 1.2rem;
   border-radius: 12px;
   min-width: 80px;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.time-box:hover {
+  transform: translateY(-4px);
 }
 
 .time-box span {
@@ -68,13 +73,13 @@
 
 .time-box small {
   font-size: 0.75rem;
-  color: #f2e9e4;
+  color: #ffafcc;
   font-weight: 600;
   margin-top: 4px;
 }
 
 .hero-button {
-  background: linear-gradient(135deg, #4a4e69, #9a8c98);
+  background: linear-gradient(135deg, #ffc8dd, #ffafcc);
   color: #fff;
   border: none;
   padding: 0.9rem 2rem;
@@ -83,13 +88,13 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.4s ease;
-  box-shadow: 0 6px 20px rgba(154, 140, 152, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 200, 221, 0.5);
 }
 
 .hero-button:hover {
-  background: linear-gradient(135deg, #9a8c98, #4a4e69);
+  background: linear-gradient(135deg, #ffafcc, #ffc8dd);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(154, 140, 152, 0.5);
+  box-shadow: 0 8px 24px rgba(255, 175, 204, 0.6);
 }
 
 /* Responsive Design */

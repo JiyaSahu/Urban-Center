@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: #22223B;
+  background-color: #CDB4DB;
   padding: 12px 20px;
   position: sticky;
   top: 0;
@@ -40,18 +40,19 @@
   gap: 28px;
   font-weight: 500;
   font-size: 18px;
+  color: #222;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #F2E9E4;
+  color: #222;
   transition: all 0.3s ease;
   font-family: 'Kreon', serif;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #C9ADA7;
+  color: #A2D2FF;
   font-family: 'Playfair Display', serif;
 }
 
@@ -105,8 +106,8 @@
 
 /* Button */
 .contact-btn button {
-  background: linear-gradient(90deg, #9A8C98, #C9ADA7);
-  color: #22223B;
+  background: linear-gradient(90deg, #BDE0FE, #A2D2FF);
+  color:  #222;
   font-size: 16px;
   font-weight: 600;
   padding: 10px 20px;
@@ -118,8 +119,8 @@
 }
 
 .contact-btn button:hover {
-  background: linear-gradient(90deg, #4A4E69, #9A8C98);
-  color: #F2E9E4;
+   background: linear-gradient(90deg, #FFAFCC, #FFC8DD);
+  color: #fff;
 }
 
 .bookAppointment {

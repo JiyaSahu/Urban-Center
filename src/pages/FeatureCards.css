@@ -3,7 +3,7 @@
 .feature-section {
   position: relative;
   padding: 80px 20px;
-  background-color: #22223B;
+  background-color: #BDE0FE; /* Soft sky blue background */
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
@@ -18,19 +18,19 @@
 }
 
 .feature-box {
-  background: #F2E9E4;
-  border: 1px solid #e0e0e0;
+  background: #fff;
+  border: 2px solid #FFC8DD;
   border-radius: 20px;
   padding: 30px 20px;
   width: 280px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .feature-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
 }
 
 .icon-circle {

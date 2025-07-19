@@ -7,25 +7,25 @@ const features = [
     icon: <FaTruck />,
     title: "Free Home Delivery",
     desc: "Urban Center offers free delivery on groceries, snacks & clothing across Patna.",
-    bgColor: "#C9ADA7",
+    bgColor: "#FFC8DD", // Pink
   },
   {
     icon: <FaTshirt />,
     title: "Latest Fashion Trends",
     desc: "Shop affordable and trendy clothes for men, women & kids—only at Urban Center.",
-    bgColor: "#4A4E69",
+    bgColor: "#A2D2FF", // Light Blue
   },
   {
     icon: <FaAppleAlt />,
     title: "Fresh Groceries",
     desc: "Get farm-fresh fruits, vegetables, and kitchen essentials delivered fast.",
-    bgColor: "#9A8C98",
+    bgColor: "#FFAFCC", // Dark Pink
   },
   {
     icon: <FaTags />,
     title: "Best Deals Daily",
     desc: "Flat 50% OFF on snacks, meals & household items. Offers updated daily!",
-    bgColor: "#22223B",
+    bgColor: "#CDB4DB", // Lavender
   },
 ];
 

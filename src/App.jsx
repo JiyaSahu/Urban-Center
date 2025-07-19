@@ -21,6 +21,7 @@ import ProductGrid from './pages/ProductGrid';
 import OfferBanner from './pages/OfferBanner.jsx';
 import Testimonial from './pages/Testimonial';
 import FeatureCards from './pages/FeatureCards.jsx';
+import CategoryMenu from './pages/CategoryMenu';
 import Mergo from './contact/Merge.jsx';
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
               path="/"
               element={
                 <>
+                  <CategoryMenu/>
                   <Home />
 
 

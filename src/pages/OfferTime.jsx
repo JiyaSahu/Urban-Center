@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./OfferTime.css";
-import bgImage from "../assets/h1.jpg"; // replace with your actual banner image
+import bgImage from "../assets/h1.jpg"; // Replace with your actual banner
 
 const OfferTime = () => {
   const calculateTimeLeft = () => {
@@ -29,15 +29,10 @@ const OfferTime = () => {
   }, []);
 
   return (
-    <section
-      className="hero-section"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
+    <section className="hero-section" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="overlay" />
       <div className="hero-content">
-        <h1 className="hero-title">
-          Urban Center Mega Sale – Flat 50% OFF!
-        </h1>
+        <h1 className="hero-title">Urban Center Mega Sale – Flat 50% OFF!</h1>
         <p className="hero-subtitle">
           Groceries, Fashion & Snacks at unbeatable prices. Shop now at Patna's favorite family store – Urban Center.
         </p>
